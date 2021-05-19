@@ -1,0 +1,32 @@
+{
+  "name": "jatinexplore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url dist/",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jatinsne/jatinunmatch"
+  },
+  "keywords": [],
+  "author": "JatinUnMatch",
+  "homepage": "https://[jatinunmatch.com]",
+  "bugs": {
+    "url": "https://github.com/jatinsne/[jatinunmatch]/issues"
+  },
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "imagesloaded": "^4.1.4",
+    "parcel": "latest",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.0-beta.2",
+    "@parcel/transformer-webmanifest": "^2.0.0-beta.2"
+  }
+}
